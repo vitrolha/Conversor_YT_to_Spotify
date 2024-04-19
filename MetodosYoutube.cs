@@ -28,7 +28,7 @@ namespace YoutubeDownloader_e_ConversorDePlaylist_v1._1_
 
                 var youtubeService = new YouTubeService(new BaseClientService.Initializer()
                 {
-                    ApiKey = "AIzaSyBK6FD7bMqj1JSduwRsE8RFB_-4mlZVy0E",
+                    ApiKey = "key",
                     ApplicationName = "Conversor"
                 });
 
