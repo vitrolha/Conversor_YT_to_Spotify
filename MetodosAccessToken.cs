@@ -34,7 +34,7 @@ namespace YoutubeDownloader_e_ConversorDePlaylist_v1._1_
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
                 HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, client.BaseAddress);
-                request.Content = new StringContent($"grant_type=client_credentials&client_id=f8831e6503224e538df2b93ae3916bcd&client_secret=1acf40f7cc29447ba8b2405e5239bbda", Encoding.UTF8, "application/x-www-form-urlencoded");
+                request.Content = new StringContent($"credentials", Encoding.UTF8, "application/x-www-form-urlencoded");
 
                 var response = await client.SendAsync(request);
                 var responseContent = await response.Content.ReadAsStringAsync();
